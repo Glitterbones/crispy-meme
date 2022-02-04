@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,66 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Weather Dashboard</title>
-     </head>
-     <body>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1 w-100 text-center">Weather Dashboard</span>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 bg-light">
+                <p class="search-header my-1">Search for a city</p>
+                <div class="input-group mb-3">
+                    <input id="city-input" type="text" class="form-control" placeholder="Enter city name" aria-label="Enter city name">
+                    <div class="input-group-append">
+                        <button class="btn btn-primary" type="button" id="search-button">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+               
 
-
-
-
-      <form>
-      <div class="fillout-form">
-         <input type="text" class="form-control" id="search-city" placeholder="Enter City here">
-         <div class="input-groupappend">
-            <button class="btn btn-info" type="button" id="search-city-button">
-               <i class="fa fa-search"></i>
-            </button>
-         </div>
-     </div>
- </form>
-
- <div id="weather-content" class="col-12 col-md-9 ">
-   <div class="city-info  my-3 px-3 py-3"></div>
-   <h2 id="current-city"> City <small class="text-muted" id="current-date"></small></h2>
-   <p class="mb-0">Temperature: <span id="current-temp"></span></p>
-   <p class="mb-0">Humidity: <span id="current-humidity"></span></p>
-   <p class="mb-0">Wind Speed: <span id="current-wind-speed"></span></p>
-   <p>UV index: <span id="uv-index"></span></p>
-
-
-</div>
-</div>
-
-<div class="col-md-9">
-   <div id="current-weather" class='card'>
-       <div class="card-body">
-           <div id="city-date-icon">
-               <span id='city-name'>
-               </span>
-               <span id='current-icon'></span>
-           </div>
-           <p class="card-text" id="current-temp"></p>
-           <p class="card-text" id="current-humidity"></p>
-           <p class="card-text" id="current-wind"></p>
-           <p class="card-text" id="current-uv"></p>
-           </ul>
-       </div>
-   </div>
-
-
-
-<div class="row">
-   <div id="forecast-weather" class="col-md-9">
-       <h2>5-Day Forecast:</h2>
-       <div id="forecast-cards">
-           <div class="card forecast">
-  <div id="forecast1" class="card-body">
- <span class="card-title" id='forecast-date1'> </span>
-<p class="card-text" id="forecast-temp1"></p>
-<p class="card-text" id="forecast-humidity1"></p>
- </div>
-</div>
-</div>
-
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
 
 
 
