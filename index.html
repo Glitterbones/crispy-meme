@@ -8,6 +8,9 @@
      </head>
      <body>
 
+
+
+
       <form>
       <div class="fillout-form">
          <input type="text" class="form-control" id="search-city" placeholder="Enter City here">
@@ -18,6 +21,7 @@
          </div>
      </div>
  </form>
+
  <div id="weather-content" class="col-12 col-md-9 ">
    <div class="city-info  my-3 px-3 py-3"></div>
    <h2 id="current-city"> City <small class="text-muted" id="current-date"></small></h2>
@@ -29,7 +33,40 @@
 
 </div>
 </div>
+
+<div class="col-md-9">
+   <div id="current-weather" class='card'>
+       <div class="card-body">
+           <div id="city-date-icon">
+               <span id='city-name'>
+               </span>
+               <span id='current-icon'></span>
+           </div>
+           <p class="card-text" id="current-temp"></p>
+           <p class="card-text" id="current-humidity"></p>
+           <p class="card-text" id="current-wind"></p>
+           <p class="card-text" id="current-uv"></p>
+           </ul>
+       </div>
+   </div>
+
+
+
+<div class="row">
+   <div id="forecast-weather" class="col-md-9">
+       <h2>5-Day Forecast:</h2>
+       <div id="forecast-cards">
+           <div class="card forecast">
+  <div id="forecast1" class="card-body">
+ <span class="card-title" id='forecast-date1'> </span>
+<p class="card-text" id="forecast-temp1"></p>
+<p class="card-text" id="forecast-humidity1"></p>
+ </div>
 </div>
+</div>
+
+
+
 
 
 
