@@ -1,5 +1,4 @@
 
-   
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,41 +7,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Git It Weather Dashboard</title>
+    <title>Weather Dashboard</title>
 </head>
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar navbar-dark bg-dark">
+        <nav class="navbar navbar-dark bg-info">
             <div class="col-12 text-center">
                 <h1>Weather Dashboard</h1>
             </div>
         </nav>
 
         <div class="row">
-            <div id="citySearch" class="col-3 pt-5 pb-3">
+            <div id="searchCity" class="col-3 pt-6 pb-3">
                 <div>
                     <div>
-                        <h4>Search for a City</h4>
+                        <h2>Search City</h2>
                     </div>
                 </div>
 
         <div class="row">
-            <div class="col-12">
+            <div class="col-10">
                 <div class="input-group">
-                    <input id="cityInput" class="form-control" type="text" placeholder="Enter city to view weather">
-                        <button type="button" id="searchBtn" class="btn btn-primary"><i class="fas fa-search"></i></button>
+                    <input id="cityInput" class="form-control" type="text" placeholder="Enter Info">
+                        <button type="button" id="searchBtn" class="btn btn-info"><i class="fas fa-search"></i></button>
                 </div>
             </div>
         </div>
 
         <div class = "row pt-3">
-            <div class = "col-12">
-                <div id = "searchHistory" class = "list-group"></div>
+            <div class = "col-10">
+                <div id = "History" class = "list-group"></div>
             </div>
         </div>
 
-        <div class = "row pt-5 ml-4">
+        <div class = "row pt-6 ml-4">
             <div></div>
                 <div id = "currentWeather"></div>
             </div>
@@ -63,7 +62,6 @@
 </body>
 
 </html>
-
 
 
 
