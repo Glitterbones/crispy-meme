@@ -1,4 +1,3 @@
-
 var today = moment().format("L");
 console.log(today);
 
