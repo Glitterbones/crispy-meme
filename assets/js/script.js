@@ -32,6 +32,18 @@ var saveSearch = function () {
   localStorage.setItem("cities", JSON.stringify(cities));
 };
 
+
+function renderSearch() {
+  searchHistoryEl.innerHTML = "";
+  for (var i = 0; i < cities.length; i++) {
+    var button = document.createElement("button");
+    button.classList = "btn-btn-info";
+    button.setAttribute("value", cities[i]);
+    button.textContent = cities[i];
+    button.style.color = "info";
+    searchHistoryEl.appendChild(button);
+  }
+
 var showWeather = function (weather, cities) {
 currentWeatherEl.textContent = cities;
   currentWeatherEl.style.fontSize = "large";
@@ -60,6 +72,17 @@ currentWeatherEl.textContent = cities;
 }
 
 
+var 5DayWeather = function (city) {
+  var apiKey = "60b403ea2e2e0ddffaf71ee67603d08e";
+  var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
+
+  fetch(apiUrl)
+    .then(function (response) {
+      response.json().then(function (data) {
+        show5DayWeather(data);
+      });
+    });
+};
 
 
 

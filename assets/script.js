@@ -20,7 +20,7 @@ var getWeather = function (event) {
     cityInputEl.value = "";
 
   } else {
-    alert("Please enter a City");
+    alert("Enter City");
   }
 
   saveSearch();
@@ -48,7 +48,7 @@ currentWeatherEl.textContent = cities;
   currentWeatherEl.appendChild(tempEl);
 
   var humidityEl = document.createElement("h6");
-  humidityEl.classList = "card-body text-light";
+  humidityEl.classList = "card-body text-dark";
   humidityEl.textContent = "Humidity: " + weather.main.humidity + " %";
   currentWeatherEl.appendChild(humidityEl);
 
@@ -57,7 +57,17 @@ currentWeatherEl.textContent = cities;
   windEl.textContent = "Wind Speed: " + weather.wind.speed + " MPH";
   currentWeatherEl.appendChild(windEl);
 }
-
+var get5DayWeather = function (city) {
+    var apiKey = "08ef12578be8b6481d16de9c739f47a8";
+    var apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&units=imperial&appid=${apiKey}`
+  
+    fetch(apiUrl)
+      .then(function (response) {
+        response.json().then(function (data) {
+          show5DayWeather(data);
+        });
+      });
+  };
 
 
 
@@ -77,6 +87,6 @@ currentWeatherEl.textContent = cities;
 
 
 var getCityWeather = function (city) {
-  var apiKey = "08ef12578be8b6481d16de9c739f47a8";
-  var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
+  var apiKey = "08ef12578be8b6481d16de9c739f47a8" ;
+  var apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`
 }
