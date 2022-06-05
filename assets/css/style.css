@@ -1,11 +1,31 @@
-.search-header {
-    font-size: 24px;
+.navbar-brand{
+    font-size: 40px;
+}
+
+.bg-custom-1 {
+    background-image:linear-gradient(20deg, #5284f0 0% , #041e50 100%);
+}
+
+.search-bar{
+    font-size:30px;
     font-weight: bold;
 }
 
-.city-name {
-    font-size: 30px;
+.city-name{
+    font-size:30px;
+    font-weight: bold;
 }
-.forecast-date {
-    font-size: 18px;
-} 
+.date{
+    font-size:30px;
+    font-weight: bold;
+}
+
+
+.forecast{
+    background-color: rgba(37, 75, 126, 0.959);
+    margin-left: 15px;
+    margin-right: 15px;
+    padding:15px;
+    column-gap:20px;
+    border-spacing:15px;
+}
